@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main function to generate the random number
+ * main - Entry point 
  *
- * return : always 0 (success)
+ * Return: Always 0 (success)
  *
  */
 int main(void)
@@ -28,7 +28,7 @@ int main(void)
 	}
 	if (x < 6 && x != 0)
 	{
-		printf(" and is less 6 not 0");
+		printf(" and is less than 6 and not 0");
 	}
 
 	printf("\n");
