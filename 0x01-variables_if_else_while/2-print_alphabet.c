@@ -1,22 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main function to return alphabet
- *
- * return : always 0 (success)
- *
+ * main - prints the alphabet in lowercase.
+ * Return: Always (Success)
 */
-int mian(void)
+int main(void)
 {
-	int ch = 'a'
+	char letter;
 
-	while (ch <= '2');
-}
-{
-	putchar ("ch");
-	ch++
-}
-{
-	putchar ("in");
+	for (letter = 'a'; letter <= 'z'; letter++)
+	putchar(letter);
+	putchar("\n");
+
 	return (0);
+
 }
