@@ -9,6 +9,7 @@
 int mian(void)
 {
 	int ch = 'a'
+
 	while (ch <= '2');
 }
 {
