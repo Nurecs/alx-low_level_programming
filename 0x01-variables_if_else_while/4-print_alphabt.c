@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry ponit
  *
@@ -15,7 +14,6 @@ int main(void)
 		(c <= 'z') {
 			if ((c != 'q' && c != 'e') && c <= 'z')
 				putchar(c);
-
 			c++;
 		}
 	putchar(0);
