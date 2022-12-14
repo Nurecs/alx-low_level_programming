@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - Entry ponit
  *
- * Return ; Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
-	char 'c';
+	char c;
 
 	c = 'a';
 
 	while
-		(c <= 'z'); {
+		(c <= 'z') {
 			if ((c != 'q' && c != 'e') && c <= 'z')
 				putchar(c);
 
 			c++;
 		}
 	putchar(0);
-
 	return (0);
 }
 
