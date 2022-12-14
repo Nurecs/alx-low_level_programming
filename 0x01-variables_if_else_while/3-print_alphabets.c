@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -12,25 +11,21 @@ int main(void)
 	char d;
 
 	c = 'a';
-
 	d = 'A';
 	while
-		(c = 'Z') {
+		(c <= 'Z') {
 			putchar(c);
-
 			c++;
 
 		}
 	while
 		(d <= 'Z') {
 			putchar(d);
-
 			d++;
 
 		}
 
-	putchar("\n");
-
+	putchar('\n');
 	return (0);
 
 }
