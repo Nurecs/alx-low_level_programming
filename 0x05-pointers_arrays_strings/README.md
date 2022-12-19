@@ -1,0 +1,1 @@
+poiters, array and strings
