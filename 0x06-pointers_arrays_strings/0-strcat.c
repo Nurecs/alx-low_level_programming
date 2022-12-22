@@ -1,20 +1,16 @@
-
-	while (src[j] != '\0' && j < n)
-	{#include "holberton.h"
+#include "holberton.h"
 
 /**
- * _strncat - concatinate the values of two integers.
+ * _strcat - concatinate the values of two integers.
  *
  * @dest: arg a
  *
  * @src: arg b
  *
- * @n: arg n
- *
  * Return: void.
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
@@ -26,13 +22,13 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	j = 0;
+
+	while (src[j] != '\0')
+	{
 		dest[i] = src[j];
 		i++;
 		j++;
-
 	}
-
-
+	dest[i] = '\0';
 	return (dest);
 }
-
