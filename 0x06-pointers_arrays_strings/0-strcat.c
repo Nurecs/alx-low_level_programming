@@ -1,13 +1,12 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strcat - concatinate the values of two integers.
- *
+ * _strcat - concatinate the values of the two intergers
  * @dest: arg a
  *
  * @src: arg b
  *
- * Return: void.
+ * Return: void
  */
 
 char *_strcat(char *dest, char *src)
@@ -29,6 +28,6 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	dest[i] = '\0';
+	dest[i] = '0';
 	return (dest);
 }
