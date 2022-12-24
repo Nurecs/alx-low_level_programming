@@ -4,14 +4,15 @@
  *
  * @str: poiter to an array of words
  *
- * Return: return capitalized words
+ * Return: Return capitalized words
  *
  */
 
 char *cap_string(char *str)
 {
 	int i, j;
-	char sep[50] = {'  ', '\n', '\t' ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	char sep[50] = {'  ', '\n', '\t' ',', ';', '.', '!', '?', '"', '(', ')',
+		'{', '}' };
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -21,7 +22,7 @@ char *cap_string(char *str)
 			{
 				if (str[i] >= 'a' && str[i] <= 'z')
 				{
-					str[i] = str[i] - 32
+					str[i] = str[i] - 32;
 				}
 			}
 			if (str[i] == sep[j])
