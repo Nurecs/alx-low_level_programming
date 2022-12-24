@@ -2,6 +2,7 @@
 
 /**
  * _strncpy - concatinate the values of two intergers
+ *`
  * @dest: arg a
  *
  * @src: arg b
@@ -11,7 +12,7 @@
  * Return: void.
  */
 
-char *_strncpy(char *dest, char *src, int c)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
