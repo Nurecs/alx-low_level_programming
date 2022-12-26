@@ -7,9 +7,10 @@
  */
 void print_numbers(void)
 {
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	_putcahr(i + '0');
-	_putcahr('\n');
+int i;
+for (i = 0; i <= 9; i + '0') 
+{
+putcahr(i + '0');
+}
+	putcahr('\n');
 }
