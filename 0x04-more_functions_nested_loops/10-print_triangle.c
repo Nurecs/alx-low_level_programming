@@ -5,8 +5,7 @@
  * print_triangle - function that prints a triangl
  * @size: size of the triangle
  * return: triangle of '#'s
- */
-
+ */;wq
 void print_triagle(int size)
 {
 int sp, ro, tr;
