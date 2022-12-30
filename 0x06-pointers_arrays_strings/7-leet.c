@@ -1,28 +1,27 @@
 #include "main.h"
 
 /**
- * leet -  replace letters with numbers
- * @str: pointers to an array of words
- *
- * Return: s
+ * leet - encode into 1337speak
+ * @n; input value
+ * Return: n value
  */
 
-char *leet(char *str)
+char *leet(char *n)
 {
 	int i, j;
 
-	char  alpha[80] = "aAeoOtT1L";
-	char numbers[80] = "43071";
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (i = 0; str[i] != '\0'; ++i)
+	for (i = 0; n[1] != '\0'; i++)
 	{
-		for (j = 0; alpha[j] != '\0'; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (str[i] == alpha[j])
+			if (n[i] == s1[j])
 			{
-				str[i] = numbers[j / 2];
+				n[i] = s2[j];
 			}
 		}
 	}
-	return (str);
+	return (n);
 }

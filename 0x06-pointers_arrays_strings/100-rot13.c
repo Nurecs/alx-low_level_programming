@@ -1,40 +1,30 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_number - prints an interger
- *
- * @n: input interger
- *
- * Return: void
+ * rot13 - encoder rot13
+ * @s: pointer to string params
+ * Return: *s
  */
 
-void print_number(int n)
+char *rot13(char *s)
 {
-	int len, index;
-
-	len = 1000000000;
-	if (n < 0)
+	int i;
+	int j;
+	char data1[] =
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] =
+"NOPQRSTUVWXYZABDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		_putchar('_');
-
-	if (n == -2147483648)
-	{
-		index = 1;
-		n += 1;
+		for (j = 0; j < 52; j++)
+		{
+			if (s[i] == data1[j])
+			{
+				s[i] = datarot[j];
+				break;
+			}
+		}
 	}
-	n = -n;
-	}
-	while (len != 1)
-	{
-		if (n >= len)
-			_putchar((n / len) % 10 + '0');
-		len /= 10;
-	}
-	if (index == 1)
-	{
-		_putchar(((n % 10) + 1) + '0');
-	}
-	else
-	{
-		_putchar(n % 10 + '0');
-	}
+	return (s);
 }
