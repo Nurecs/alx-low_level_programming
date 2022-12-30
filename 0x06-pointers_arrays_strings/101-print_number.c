@@ -1,40 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_number - print an interger
- *
- * @n: input interger
- * Return; void
+ * print_number - print numbers chars
+ * @n: interger params
+ * Return: 0
  */
 
 void print_number(int n)
 {
-	int len, index;
+	unsigned int n1;
 
-	len = 1000000000;
-
+	n1 = n;
 	if (n < 0)
 	{
-		_putchar(' - ');
-
-	if (n == -2147483648)
+		putchar('-');
+		n1 = -n;
+	}
+	if (n1 / 10 != 0)
 	{
-		index = 1;
-		n += 1;
+		print_number(n1 / 10);
 	}
-	n = -n;
-	}
-	while (len != 1)
-	{
-		if (n >= len)
-			_putchar((n / len) % 10 + '0');
-		len / = 10;
-	}
-	if (index == 1)
-	{
-		_putchar(((n % 10) + 1) + '0');
-	}
-	else
-	{
-		_putchar(n % 10 + '0')
-	}
+	putchar((n1 % 10) + '0');
 }
